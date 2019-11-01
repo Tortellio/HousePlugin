@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27703.2047
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28729.10
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Houseplugin", "Houseplugin.csproj", "{3AA7C3DC-89A5-4DFA-8A9E-4491C3198980}"
 EndProject
@@ -20,6 +20,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {0EAA92B7-9938-4EE1-844C-F7EBCCFDB21A}
+		SolutionGuid = {A535C031-DD02-4C20-8DEE-69C43636A42A}
 	EndGlobalSection
 EndGlobal

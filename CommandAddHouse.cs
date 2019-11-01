@@ -1,20 +1,8 @@
-﻿using fr34kyn01535.Uconomy;
-using Rocket.API;
-using Rocket.Core.Plugins;
+﻿using Rocket.API;
 using Rocket.Unturned.Chat;
 using Rocket.Unturned.Player;
-using SDG.Unturned;
-using Steamworks;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading;
 using UnityEngine;
-using System.Collections.Generic;
-using System.Text;
-using System.Collections;
-using System.Reflection;
-using Rocket.Unturned.Permissions;
 
 namespace Edsparr.Houseplugin
 {
@@ -100,8 +88,7 @@ namespace Edsparr.Houseplugin
                 UnturnedChat.Say(player, "Invalid syntax: /addhouse <price>", Color.red);
                 return;
             }
-            decimal cost = 0;
-            bool IsNumber = decimal.TryParse(command[0], out cost);
+            bool IsNumber = decimal.TryParse(command[0], out decimal cost);
             var house = Plugin.Instance.getHouseFromObjects(player.Position);
             if (!IsNumber)
             {

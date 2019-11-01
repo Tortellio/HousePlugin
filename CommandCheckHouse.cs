@@ -10,7 +10,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 using UnityEngine;
-using System.Collections.Generic;
 using System.Text;
 using System.Collections;
 using System.Reflection;

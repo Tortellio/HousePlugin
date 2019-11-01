@@ -1,20 +1,9 @@
 ﻿using fr34kyn01535.Uconomy;
 using Rocket.API;
-using Rocket.Core.Plugins;
 using Rocket.Unturned.Chat;
 using Rocket.Unturned.Player;
-using SDG.Unturned;
-using Steamworks;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading;
 using UnityEngine;
-using System.Collections.Generic;
-using System.Text;
-using System.Collections;
-using System.Reflection;
-using Rocket.Unturned.Permissions;
 
 namespace Edsparr.Houseplugin
 {
@@ -110,8 +99,7 @@ namespace Edsparr.Houseplugin
             {
                 UnturnedChat.Say(player, "You can't afford this house! It cost " + Plugin.Instance.getCost(Plugin.Instance.getHouse(player.Position)) + "!", Color.red); return;
             }
-            decimal cost = 0;
-            Plugin.Instance.buyhHouse(Plugin.Instance.getHouse(player.Position), (ulong)player.CSteamID, (ulong)player.Player.quests.groupID, out cost);
+            Plugin.Instance.buyhHouse(Plugin.Instance.getHouse(player.Position), (ulong)player.CSteamID, (ulong)player.Player.quests.groupID, out decimal cost);
             UnturnedChat.Say(player, "You succesfully bought this house for " + cost + "!", Color.yellow);
             Uconomy.Instance.Database.IncreaseBalance(player.CSteamID.ToString(), -cost);
         }
